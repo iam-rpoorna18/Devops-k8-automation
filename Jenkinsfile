@@ -1,5 +1,6 @@
 pipeline {
-    agent { label 'host' }
+    agent any 
+    // { label 'host' }
     stages{
         stage('Build Maven'){
             steps{
