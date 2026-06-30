@@ -11,7 +11,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'whoamo'
+                    sh 'whoami'
                     sh 'docker build -t k8/devops-integration:latest .'
                     //sh 'docker tag k8/devops-integration:latest localhost:5000/k8/devops-integration:latest'
                     //sh 'docker push localhost:5000/k8/devops-integration:latest'
