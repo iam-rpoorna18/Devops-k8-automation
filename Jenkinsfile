@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Load Image into Kind') {
             steps {
-                sh 'kind load docker-image k8/devops-integration:latest --name dev-cluster'
+                sh 'kind load docker-image k8/devops-integration:latest'
             }
         }
         stage('Deploy to k8s'){
